@@ -150,8 +150,8 @@ def user_input_features():
     no_of_dependents = st.sidebar.number_input("Number of Dependents", min_value=0, max_value=10, value=2)
     education = st.sidebar.selectbox("Education", options=['Graduate', 'Not Graduate'])
     self_employed = st.sidebar.selectbox("Self Employed", options=['Yes', 'No'])
-    income_annum = st.sidebar.number_input("Annual Income (in INR)", min_value=0, value=5000000, step=100000)
-    loan_amount = st.sidebar.number_input("Loan Amount (in INR)", min_value=0, value=15000000, step=100000)
+    income_annum = st.sidebar.number_input("Annual Income", min_value=0, value=5000000, step=100000)
+    loan_amount = st.sidebar.number_input("Loan Amount", min_value=0, value=15000000, step=100000)
     loan_term = st.sidebar.number_input("Loan Term (in years)", min_value=1, max_value=20, value=12)
     cibil_score = st.sidebar.slider("CIBIL Score", min_value=300, max_value=900, value=700)
     residential_assets_value = st.sidebar.number_input("Residential Assets Value", min_value=0, value=5000000, step=100000)
@@ -299,14 +299,14 @@ with tab5:
     - **no_of_dependents**: Number of dependents of the applicant
     - **education**: Graduate / Not Graduate
     - **self_employed**: Yes / No
-    - **income_annum**: Annual income of the applicant (in INR)
-    - **loan_amount**: Requested loan amount (in INR)
+    - **income_annum**: Annual income of the applicant
+    - **loan_amount**: Requested loan amount
     - **loan_term**: Loan repayment term (in years)
     - **cibil_score**: Credit score (300-900)
-    - **residential_assets_value**: Value of residential assets (in INR)
-    - **commercial_assets_value**: Value of commercial assets (in INR)
-    - **luxury_assets_value**: Value of luxury assets (in INR)
-    - **bank_asset_value**: Value of bank assets (in INR)
+    - **residential_assets_value**: Value of residential assets
+    - **commercial_assets_value**: Value of commercial assets
+    - **luxury_assets_value**: Value of luxury assets
+    - **bank_asset_value**: Value of bank assets
     - **loan_status**: Target variable (Approved / Rejected)
     """)
 
